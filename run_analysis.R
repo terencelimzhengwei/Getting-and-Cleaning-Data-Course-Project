@@ -24,9 +24,9 @@ run_analysis<- function(){
   summarizedData<- summarizeData(mergeData)
   
   #save data as csv
-  write.csv(mergeData, file.path("./merged_data.csv"), row.names = FALSE)
-  write.csv(summarizedData, file.path("./summarized_data.csv"), row.names = FALSE)
-  write.table(summarizedData, file.path("./summarized_data.txt"), row.names = FALSE)
+  write.csv(mergeData, file.path("./output/merged_data.csv"), row.names = FALSE)
+  write.csv(summarizedData, file.path("./output/summarized_data.csv"), row.names = FALSE)
+  write.table(summarizedData, file.path("./output/summarized_data.txt"), row.names = FALSE)
   
   return (summarizedData)
 }
