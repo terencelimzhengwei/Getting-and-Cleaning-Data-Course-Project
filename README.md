@@ -21,14 +21,14 @@ You should create one R script called run_analysis.R that does the following:
 ##Steps to run script
 1. Clone this repository
 2. Open RStudio and set working directory as the directory where you cloned the repository
-* e.g. setwd("C:/Users/Terence/Data Science Course")
-3. Run source("run_analysis.R"), then call the function run_analysis()
+* e.g. ```setwd("C:/Users/Terence/Data Science Course")```
+3. Run ```source("run_analysis.R")```, then call the function ```run_analysis()```
 4. Wait and the function will create the tidy data named summarized_data.txt. CSV versions of the data are also produced.
 
 ##Dependencies
 This script uses the following libraries:
 
-1. dplyr
-2. tidyr
+1. ```dplyr```
+2. ```tidyr```
 
 
