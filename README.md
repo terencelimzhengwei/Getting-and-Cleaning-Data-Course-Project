@@ -20,15 +20,14 @@ You should create one R script called run_analysis.R that does the following:
 
 ##Steps to run script
 1. Clone this repository
-2. Download the dataset from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and unzip it into the working directory
-* There should be a new folder named "UCI HAR Dataset"
-3. Open RStudio and set working directory as the directory where you cloned the repository
+2. Open RStudio and set working directory as the directory where you cloned the repository
 * e.g. setwd("C:/Users/Terence/Data Science Course")
-4. Run source("run_analysis.R"), then call the function run_analysis()
-5. Wait and the function will create the tidy data named summarized_data.txt. CSV versions of the data are also produced.
+3. Run source("run_analysis.R"), then call the function run_analysis()
+4. Wait and the function will create the tidy data named summarized_data.txt. CSV versions of the data are also produced.
 
 ##Dependencies
 This script uses the following libraries:
+
 1. dplyr
 2. tidyr
 
