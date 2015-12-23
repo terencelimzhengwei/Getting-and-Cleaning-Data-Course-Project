@@ -33,5 +33,6 @@ This script uses the following libraries:
 2. ```tidyr```
 
 #Codebook
+Please refer to codebook.md to know more about the variables in the summarized dataset
 
 

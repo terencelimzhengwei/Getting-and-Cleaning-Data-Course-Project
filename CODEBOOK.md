@@ -3,8 +3,11 @@ This codebook describes the data in summarized_data.txt
 
 ##Data Source
 Detailed information of the data source can be found at:
+
 	*http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+
 Data can be downloaded from: 
+
 	*https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 ##Dataset Information
@@ -15,23 +18,30 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 ##Transformations made to Data
 Several transformations were made to the data:
 
-1. The test and training data '''X_train''' and '''X_test''' were transformed:
+1. The test and training data ```X_train``` and ```X_test``` were transformed:
+
 	* only the mean and standard deviation of variables were chosen from the 561 feature vector
 	* The subject's ID was added as the first column of the new dataset
 	* The activity labels were added as the second column of the new dataset
+
 2. The training and test data were merged together
+
 	* test data was appended to the bottom of the training data
+
 3. The merged data was grouped by subject and activity and each variable was summarized by their mean using the following code snippet.
-'''r
+
+```r
 summarizeData<-function(data){
   #summarizes data by subject and activity
   data %>%
     group_by(subject,activity) %>%
     summarise_each(funs(mean))
 }
-'''
+```
 4. The resulting summarized data was saved as summarized_data.txt in the output folder.
+
 #Variables
+
 subject
 activity
 time.BodyAcc.mean.X
