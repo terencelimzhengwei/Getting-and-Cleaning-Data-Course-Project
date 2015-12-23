@@ -12,9 +12,9 @@ prepare_data<-function(dataType,features,activityLabel){
   yFileName<- paste("y_",dataType,".txt",sep="")
   
   #reads data into variables
-  x<- tbl_df(read.table(file.path("./data",dataType,trainFileName)))
-  subject_data<-tbl_df(read.table(file.path("./data",dataType,subjectFileName)))
-  y<-tbl_df(read.table(file.path("./data",dataType,yFileName)))
+  x<- tbl_df(read.table(file.path("./UCI HAR Dataset",dataType,trainFileName)))
+  subject_data<-tbl_df(read.table(file.path("./UCI HAR Dataset",dataType,subjectFileName)))
+  y<-tbl_df(read.table(file.path("./UCI HAR Dataset",dataType,yFileName)))
   
   #Get only mean and std
   featureVector<- grep("mean\\(\\)|std\\(\\)",features)

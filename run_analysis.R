@@ -8,9 +8,9 @@ run_analysis<- function(){
   source("summarize.R")
   
   #read activity labels and features
-  activity_label<- tbl_df(read.table("./data/activity_labels.txt"))
+  activity_label<- tbl_df(read.table("./UCI HAR Dataset/activity_labels.txt"))
   activity_label<- activity_label[[2]]
-  features<- tbl_df(read.table("./data/features.txt"))
+  features<- tbl_df(read.table("./UCI HAR Dataset/features.txt"))
   features<- features[[2]]
   
   #prepares the train/test data
